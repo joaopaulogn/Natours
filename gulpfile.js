@@ -2,6 +2,7 @@
 
 const gulp = require('gulp');
 const sass = require('gulp-sass');
+const browserSync = require('browser-sync');
 
 // Compile SCSS into CSS
 gulp.task('sass', () => {
@@ -18,8 +19,15 @@ gulp.task('css', () => {
 
 // Watch every change on scss and js files
 gulp.task('watch', () => {
+    browserSync.init({
+        server: {
+            baseDir: './'
+        }
+    });
     gulp.watch('./assets/sass/**/*.scss', gulp.series('sass'));
     gulp.watch('./assets/css/', gulp.series('css'));
+    gulp.watch('./assets/sass/**/*.scss').on('change', browserSync.reload);
+    gulp.watch('./assets/js/**/*.js').on('change', browserSync.reload);
 });
 
 // Default task which automate the process
