@@ -50,6 +50,15 @@
         }
     }
 
+    &--green {
+        background-color: $color-primary;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-primary;
+        }        
+    }
+
     &--animated {
         animation: moveToTop 0.8s 0.25s ease-in-out backwards;
     }
