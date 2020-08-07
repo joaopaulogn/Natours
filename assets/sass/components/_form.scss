@@ -86,10 +86,7 @@
             background-color: $color-primary;
             border-radius: 50%;
 
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            @include center;
 
             transition: opacity 0.3s;
         }
