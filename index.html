@@ -44,7 +44,7 @@
                 <span class="heading-primary--sub">is where life happens</span>
             </h1>
 
-            <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
+            <a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a>
         </div>
     </header>
 
@@ -123,7 +123,7 @@
             </div>
         </section>
 
-        <section class="section-tours">
+        <section class="section-tours" id="section-tours">
             <div class="u-center-text u-margin-bottom-large">
                 <h2 class="heading-secondary">Most popular tours</h2>
             </div>
@@ -157,7 +157,7 @@
                                     <p class="card__price-value">$297</p>
                                 </div>
 
-                                <a href="#" class="btn btn--white">Book now!</a>
+                                <a href="#popup" class="btn btn--white">Book now!</a>
                             </div>
                         </div>
                     </div>
@@ -191,7 +191,7 @@
                                     <p class="card__price-value">$497</p>
                                 </div>
 
-                                <a href="#" class="btn btn--white">Book now!</a>
+                                <a href="#popup" class="btn btn--white">Book now!</a>
                             </div>
                         </div>
                     </div>
@@ -225,7 +225,7 @@
                                     <p class="card__price-value">$897</p>
                                 </div>
 
-                                <a href="#" class="btn btn--white">Book now!</a>
+                                <a href="#popup" class="btn btn--white">Book now!</a>
                             </div>
                         </div>
                     </div>
@@ -361,12 +361,30 @@
             </div>
             <div class="col-1-of-2">
                 <p class="footer__copy">
-                    Built by <a href="https://github.com/joaopaulogn/" class="footer__link">João Paulo</a> for the Advanced CSS and SASS course of Jonas Schmedtmann, available in <a href="https://www.udemy.com/course/advanced-css-and-sass/" class="footer__link">here</a>. The entire design of the page was built by Jonas Schmedtmann, creator of this course.
+                    Built by <a href="https://github.com/joaopaulogn/" target="_blank" class="footer__link">João Paulo</a> for the Advanced CSS and SASS course of Jonas Schmedtmann, available in <a href="https://www.udemy.com/course/advanced-css-and-sass/" target="_blank" class="footer__link">here</a>. The entire design of the page was built by Jonas Schmedtmann, creator of this course.
                 </p>
             </div>
         </div>
     </footer>
 
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img src="assets/img/nat-8.jpg" alt="Tour photo" class="popup__img">
+                <img src="assets/img/nat-9.jpg" alt="Tour photo" class="popup__img">
+            </div>
+
+            <div class="popup__right">
+                <a href="#section-tours" class="popup__close">&times;</a>
+                <h2 class="heading-secondary u-margin-bottom-small">Starting booking now</h2>
+                <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
+                <p class="popup__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur adipiscing elit pellentesque habitant morbi tristique senectus. Turpis massa sed elementum tempus egestas sed sed. Eget aliquet nibh praesent tristique magna sit amet purus. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Condimentum lacinia quis vel eros donec ac odio tempor. Ornare massa eget egestas purus viverra accumsan in nisl nisi. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus. Sed enim ut sem viverra aliquet eget sit. Convallis tellus id interdum velit laoreet id donec ultrices. Sed id semper risus in hendrerit gravida. Pulvinar proin gravida hendrerit lectus a. Imperdiet sed euismod nisi porta lorem mollis. Nunc faucibus a pellentesque sit. Viverra nibh cras pulvinar mattis.
+                </p>
+                <a href="#" class="btn btn--green">Book now</a>
+            </div>
+        </div>
+    </div>
     <!-- <section class="grid">
         <div class="row">
             <div class="col-1-of-2">Col 1 of 2</div>
